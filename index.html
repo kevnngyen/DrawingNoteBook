@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drawing app</title>
+</head>
+<body>
+    <section class="container">
+        <div id="toolbar">
+          
+            <button id="pen" class= "pen"></button>
+            <button id="erase" class= "erase"></button>
+            <button id="clear" class= "clear"></button>
+            
+        </div>
+
+        <div id = "prompt">
+          <p>Are you sure you want to clear the board?</p>
+          <button id="yes" class= "yes">YES</button>
+          <button id="no" class= "no">NO</button>
+        </div>
+
+
+    </section>
+
+    <section class="penOption">
+
+      <div>
+        <p id = "counter" >50%</p>
+      </div>
+
+      <div id = "rangeSliderContainer">
+        <input type="range" min="1" max="100" value="50" class="penSlider" id="penSlider">
+      </div>
+
+      <div id = "colourInput">
+        <input type="color" name="colour" value="#000000" class="colourSlider" id="colourSlider" />
+      </div>
+
+    </section>
+
+
+    <section class="canvas">
+
+      <div class="drawing-board">
+        <canvas id="drawing-board"></canvas>
+      </div>
+
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>
